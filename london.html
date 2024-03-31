@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/8favicon.png">
+    <link href="london.css" rel="stylesheet" type="text/css">
+    
+    <title>❤ L+B ❤</title>
+</head>
+<body>
+    <div class="gallery">
+        <img src='https://cdn.discordapp.com/attachments/969701892387131452/1074884590767968256/WhatsApp_Image_2023-02-14_at_2.44.50_AM_2.jpeg' alt=''>
+        <img src='https://cdn.discordapp.com/attachments/969701892387131452/1074884590973505647/WhatsApp_Image_2023-02-14_at_2.44.50_AM_1.jpeg' alt=''>
+        <img src='https://cdn.discordapp.com/attachments/969701892387131452/1074884662293442560/WhatsApp_Image_2023-02-14_at_2.44.49_AM.jpeg' alt=''>
+        <img src='https://cdn.discordapp.com/attachments/969701892387131452/1074884678407962664/WhatsApp_Image_2023-02-14_at_2.44.49_AM_1.jpeg' alt=''>
+        <img src='https://cdn.discordapp.com/attachments/969701892387131452/1074884699526266931/WhatsApp_Image_2023-02-14_at_2.44.48_AM_2.jpeg' alt=''>
+        <img src='https://cdn.discordapp.com/attachments/969701892387131452/1074884670552023090/WhatsApp_Image_2023-02-14_at_2.44.48_AM_1.jpeg' alt=''>
+        <img src='https://cdn.discordapp.com/attachments/969701892387131452/1074884706551746650/WhatsApp_Image_2023-02-14_at_2.44.48_AM.jpeg' alt=''>
+        <img src='https://cdn.discordapp.com/attachments/969701892387131452/1074884711727501502/WhatsApp_Image_2023-02-14_at_2.44.46_AM.jpeg' alt=''>
+        <img src='https://cdn.discordapp.com/attachments/969701892387131452/1074884746372460574/WhatsApp_Image_2023-02-14_at_2.44.49_AM_4.jpeg' alt=''>
+       <img src='https://cdn.discordapp.com/attachments/969701892387131452/1074884722196484196/WhatsApp_Image_2023-02-14_at_2.44.45_AM.jpeg' alt=''>
+    </div>
+    <div class="container">
+        <div class="heart" onclick="location.href='main.html'" style="cursor: pointer;"></div>
+        </div>
+</body>
+<script>
+    
+    function hearts(){
+     
+     const container = document.querySelector('body');
+     const creat = document.createElement('div');
+     creat.classList.add('hearts');
+     creat.innerHTML = '❤️';
+     creat.style.left=Math.random()*100+'vw';
+    
+     creat.style.animationDuration = Math.random()* 3+2+'s';
+     container.appendChild(creat)
+     setTimeout(() => {
+        creat.remove();
+     },4000);
+    }
+    
+    
+    setInterval(hearts, 100);
+    
+    
+    </script>
+</html>
